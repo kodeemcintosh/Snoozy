@@ -30,6 +30,9 @@
     <ClInclude Include="..\..\..\Bigbin\AURALightingSDK.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AsusAuraSDK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -39,6 +42,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="snoozy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AsusAuraSDK.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

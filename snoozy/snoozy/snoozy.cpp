@@ -2,31 +2,10 @@
 #include "stdafx.h"
 
 
-EnumerateMbControllerFunc EnumerateMb;
-SetMbModeFunc SetMbMode;
-SetMbColorFunc SetMbColor;
-GetMbLedCountFunc GetMbLedCount;
-
-EnumerateGPUFunc EnumerateGPU;
-SetGPUModeFunc SetGPUMode;
-SetGPUColorFunc SetGPUColor;
-GetGPULedCountFunc GetGPULedCount;
-
-EnumerateDramFunc EnumerateDram;
-SetDramModeFunc SetDramMode;
-SetDramColorFunc SetDramColor;
-GetDramLedCountFunc GetDramLedCount;
-
-const DWORD mbControllerCount = EnumerateMb(NULL, 0);
-const DWORD gpuControllerCount = EnumerateGPU(NULL, 0);
-const DWORD dramControllerCount = EnumerateDram(NULL, 0);
-
-MbLightControl* g_mbLightCtrl = new MbLightControl();
-GPULightControl* g_gpuLightCtrl = new GPULightControl();
-DramLightControl* g_dramLightCtrl = new DramLightControl();
 
 void init()
 {
+
 	// intialize the mouse lighting
 	bool LedInitialized = LogiLedInit();
 	if (!LedInitialized)
@@ -71,9 +50,6 @@ int time_check(int duration, int off)
 // lights off for ASUS mobo, phanteks led strips, phanteks case, and G.SKILL trident RGB ram
 void set_aura(int status)
 {
-
-
-
 	if (status == 0)
 	{
 

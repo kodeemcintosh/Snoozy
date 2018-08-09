@@ -9,7 +9,6 @@ void init(void);
 // where the sleep and clock check functionality is located
 int time_check(int = 10, int = 21);
 
-
 // LIGHTING
 // sets the Aura sync lights
 void set_aura(int = 0);

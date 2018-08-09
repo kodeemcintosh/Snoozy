@@ -157,11 +157,13 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\Bigbin\AURALightingSDK.h" />
     <ClInclude Include="..\..\..\Bigbin\LogitechLEDLib.h" />
+    <ClInclude Include="AsusAuraSDK.h" />
     <ClInclude Include="snoozy.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AsusAuraSDK.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="snoozy.cpp" />
     <ClCompile Include="stdafx.cpp">
